@@ -3,10 +3,8 @@ package com.example.demo.domain;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-
 @Entity
 public class Ingredient {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,14 +17,6 @@ public class Ingredient {
 
     @ManyToOne
     private Recipe recipe;
-
-    public Recipe getRecipe() {
-        return recipe;
-    }
-
-    public void setRecipe(Recipe recipe) {
-        this.recipe = recipe;
-    }
 
     public Long getId() {
         return id;
@@ -50,6 +40,14 @@ public class Ingredient {
 
     public void setAmount(BigDecimal amount) {
         this.amount = amount;
+    }
+
+    public Recipe getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(Recipe recipe) {
+        this.recipe = recipe;
     }
 
     public UnitOfMeasure getUom() {
