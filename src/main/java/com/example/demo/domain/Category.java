@@ -3,6 +3,7 @@ package com.example.demo.domain;
 import javax.persistence.*;
 import java.util.Set;
 
+
 @Entity
 public class Category {
 
@@ -37,6 +38,4 @@ public class Category {
     public void setRecipes(Set<Recipe> recipes) {
         this.recipes = recipes;
     }
-
-
 }
