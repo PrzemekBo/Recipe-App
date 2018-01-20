@@ -1,6 +1,8 @@
+package com.example.demo.services;
+
 import com.example.demo.domain.Recipe;
 import com.example.demo.respositories.RecipeRepository;
-import com.example.demo.services.RecipeService;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
